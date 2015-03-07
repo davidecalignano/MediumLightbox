@@ -1,0 +1,125 @@
+/* Demo style */
+
+html, body {
+	overflow-x: hidden;
+	margin: 0;
+	font-family: sans-serif;
+	line-height: 20px;
+}
+
+.post{
+	position: relative;
+	max-width:700px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+figure{
+	margin: 0px;
+	position: relative;
+	clear: both;
+	margin: 20px;
+}
+
+figure.left{
+	margin-left: 0;
+}
+
+figure.right{
+	margin-right: 0;
+}
+
+figure.full{
+	margin-left:0;
+	margin-right:0;
+}
+
+.one-third {
+	width:33.33%;
+}
+
+.half {
+	width:50%;
+}
+
+.full {
+	width:100%;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+
+
+/* MediumLightbox style */
+
+.scrollbar-measure {
+	width: 100px;
+	height: 100px;
+	overflow: scroll;
+	position: absolute;
+	top: -9999px;
+}
+
+.img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+
+
+.aspectRatioPlaceholder .img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.zoom-effect .img{
+	cursor: pointer;
+	cursor: -webkit-zoom-in;
+}
+
+.zoom-effect .zoomImg,
+.zoom-effect .zoomImg-wrap {
+	position: relative;
+	z-index: 900;
+	transition: all 300ms;
+}
+
+.zoom-effect .zoomImg-wrap--absolute {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.zoom-effect .zoomImg {
+	cursor: pointer;
+	cursor: -webkit-zoom-out;
+}
+
+
+.zoom-effect .zoomOverlay.show{
+	opacity: 1;
+}
+
+.zoom-effect .zoomOverlay {
+	z-index: 800;
+	background: #fff;
+	position: absolute;
+	transition: opacity 300ms;
+	opacity: 0;
+	cursor: pointer;
+	cursor: -webkit-zoom-out;
+}
