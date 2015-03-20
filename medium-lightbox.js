@@ -139,13 +139,13 @@ function MediumLightbox(element, options) {
 				console.log('big')
 			}
 			
-			//Add zommed values: x,y and scale
-			var that = this;
-			setTimeout(function(){
-				that.wrapper.style.cssText = 'transform: translate('+wrapX+'px, '+wrapY+'px) translateZ(0px);';
-				that.img.style.cssText="transform: scale("+scale+")";
-				that.overlay.className = 'zoomOverlay show';
-			},0);
+                        //Add zommed values: x,y and scale
+                        var that = this;
+                        setTimeout(function(){
+                            that.wrapper.style.cssText = 'transform: translate('+wrapX+'px, '+wrapY+'px) translateZ(0px);-webkit-transform: translate('+wrapX+'px, '+wrapY+'px) translateZ(0px);';
+                            that.img.style.cssText="transform: scale("+scale+");-webkit-transform: scale("+scale+")";
+                            that.overlay.className = 'zoomOverlay show';
+                        },0);
 
 
 		}else{
