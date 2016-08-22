@@ -35,7 +35,7 @@ figure.full{
 }
 
 .one-third {
-	width:33.33%;
+	width: calc(100%/3);
 }
 
 .half {
