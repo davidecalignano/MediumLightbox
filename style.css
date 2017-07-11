@@ -86,6 +86,7 @@ figure.full{
 .zoom-effect .img{
 	cursor: pointer;
 	cursor: -webkit-zoom-in;
+	backface-visibility: hidden;
 }
 
 .zoom-effect .zoomImg,
