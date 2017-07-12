@@ -136,7 +136,7 @@ function MediumLightbox(element, options) {
 			//recal scale if zoomed image is more bigger then original
 			if(scale*imgW > realW){
 				scale = realW/imgW;
-				console.log('big')
+				//console.log('big')
 			}
 			
                         //Add zommed values: x,y and scale
